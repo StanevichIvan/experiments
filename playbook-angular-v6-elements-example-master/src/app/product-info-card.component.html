@@ -1,3 +1,7 @@
-<header>{{product?.name}}</header>
-<p>{{product?.description}}</p>
-<button (click)="buy.emit(product)">Buy Now</button>
+<div>
+    <div *ngFor="let cat of cats">
+        <div>{{cat.title}}</div>
+        <div>{{cat.description}}</div>
+        <img [src]="cat.image"/>
+    </div>
+</div>
